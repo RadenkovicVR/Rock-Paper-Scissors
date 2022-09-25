@@ -1,4 +1,4 @@
-console.log("Welcome! Type: Rock, Paper or Scissors in order to palay."); 
+console.log("Welcome! Type: Rock, Paper or Scissors in order to play."); 
 
 // Computer choice
 function getComputerChoice() {
