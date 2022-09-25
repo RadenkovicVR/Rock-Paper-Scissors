@@ -78,10 +78,11 @@ function game(){
     for (let i = 0; i < 5; i++) {
         computerSelection = getComputerChoice();
         playerSelection = String(prompt("Your choice: ")).toLowerCase();
+        console.log("Round: " + (i + 1));
         playRound(computerSelection, playerSelection);
         console.log(counters());
     }
-    console.log("Won: " + wonCounter + " \nLost: " + lostCounter + " \nDraw: " + drawCounter);
+    console.log("\nWon: " + wonCounter + " \nLost: " + lostCounter + " \nDraw: " + drawCounter);
 }
 
 game();
