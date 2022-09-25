@@ -2,7 +2,7 @@ console.log("Welcome! Type: Rock, Paper or Scissors in order to play.");
 
 // Computer choice
 function getComputerChoice() {
-    option = Math.floor(Math.random() * 3) + 1;
+    let option = Math.floor(Math.random() * 3) + 1;
     switch (option) {
         case 1:
             return "rock";
@@ -18,9 +18,9 @@ function getComputerChoice() {
 
 // Counters
 
-wonCounter = 0;
-lostCounter = 0;
-drawCounter = 0;
+let wonCounter = 0;
+let lostCounter = 0;
+let drawCounter = 0;
 
 // Game Logic
 
@@ -79,10 +79,10 @@ function game(){
         computerSelection = getComputerChoice();
         playerSelection = String(prompt("Your choice: ")).toLowerCase();
         console.log("Round: " + (i + 1));
-        playRound(computerSelection, playerSelection);
-        console.log(counters());
+        playRound(console.log("Computer: " + computerSelection), console.log("You: " + playerSelection));
+        console.log("Result: " + counters());
     }
-    console.log("\nWon: " + wonCounter + " \nLost: " + lostCounter + " \nDraw: " + drawCounter);
+    console.log("\nFinal score:\n" + "\nWon: " + wonCounter + " \nLost: " + lostCounter + " \nDraw: " + drawCounter);
 }
 
 game();
